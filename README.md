@@ -10,3 +10,6 @@
 ### Run GPT
 
 `!cd ./nanoGPT && python sample.py --dtype=float16 --num_samples=5 --max_new_tokens=10 --start=" "`
+
+### Notes
+* `init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'`
