@@ -5,8 +5,10 @@
 
 
 ### Train GPT
+From Chars Tokens
 * `!cd ./nanoGPT && python train.py --dataset=disney --dtype=float16 --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --lr_decay_iters=2000 --dropout=0.0 --init_from='resume' --eval_interval=20 --max_iters=20`
 
+From GPT Tokens
 * `!cd ./nanoGPT && python train.py --dataset=disney --dtype=float16 --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --lr_decay_iters=2000 --dropout=0.0 --init_from='gpt2'   --eval_interval=20 --max_iters=20`
 
 ### Run GPT
