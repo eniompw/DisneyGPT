@@ -8,7 +8,10 @@
 From Chars Tokens
 * `!cd ./nanoGPT && python train.py --dataset=disney --dtype=float16 --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --lr_decay_iters=2000 --dropout=0.0 --init_from='resume' --eval_interval=20 --max_iters=20`
 
-From GPT Tokens
+From GPT2 Tokens Scratch
+* `!cd ./nanoGPT && python train.py config/train_shakespeare_char.py --out_dir='out' --dataset=disney --dtype=float16 --block_size=64 --log_interval=1 --eval_interval=5 --max_iters=5 --eval_iters=5 --init_from='scratch'`
+
+From GPT2 Tokens
 * `!cd ./nanoGPT && python train.py config/train_shakespeare_char.py --out_dir='out' --dataset=disney --dtype=float16 --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --lr_decay_iters=2000 --dropout=0.0 --init_from='gpt2' --eval_interval=20 --max_iters=20`
 
 ### Run GPT
