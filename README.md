@@ -18,7 +18,19 @@ From GPT2 Tokens
 
 `!cd ./nanoGPT && python sample.py --dtype=float16 --num_samples=5 --max_new_tokens=10 --start=" "`
 
-### Notes
+### Flags
+`train.py` arguments explained:
+
+* colab GPU doesn't support default bfloat16
+  * `--dtype=float16`
+* save model every 100 iters:
+  * `--eval_interval=100`
+* calculate val loss for every 100 iters:
+  * `--eval_iters=100`
+* stop training after 300 iters:
+  * `--max_iters=300`
+
 * `init_from = 'resume' # 'scratch' or 'resume' or 'gpt2*'`
 * `lr_decay_iters=2000 --max_iters=2000 # causes ZeroDivisionError decay=2001 temp solve`
-* `baby GPT model = config/train_shakespeare_char.py`
+* [baby GPT model](https://github.com/karpathy/nanoGPT/blob/master/config/train_shakespeare_char.py) `config/train_shakespeare_char.py`
+* Only a MackBook!: `python train.py config/train_shakespeare_char.py --device=cpu --compile=False --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --max_iters=2000 --lr_decay_iters=2000 --dropout=0.0`
