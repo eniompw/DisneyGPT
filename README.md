@@ -1,5 +1,10 @@
 # DisneyGPT
 
+
+* [11M babyGPT on Chars](https://github.com/eniompw/DisneyGPT/blob/main/DisneyGPTChar.ipynb)
+* [124M babyGPT using GPT2 Tokens](https://github.com/eniompw/DisneyGPT/blob/main/DisneyBabyGPT2.ipynb)
+
+
 * [Based on eniompw/nanoGPTshakespeare](https://github.com/eniompw/nanoGPTshakespeare)
 * [Based on karpathy/nanoGPT](https://github.com/karpathy/nanoGPT)
 
